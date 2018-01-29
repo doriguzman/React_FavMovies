@@ -4,7 +4,7 @@ import { Link, Route } from 'react-router-dom';
 import moviesapi from './moviesapi'
 import MovieList from './movieList'
 
-const movieGenres= moviesapi.getMovieGenres()
+
 
 
 class Select extends React.Component {
@@ -43,6 +43,7 @@ class SelectMovie extends React.Component {
     const movieGenres= moviesapi.getMovieGenres()
     console.log(movieGenres)
     const renderMovieGenre= moviesapi.genreFilter(genre)
+    //gives back the array of movies filtered by the genre
     console.log(renderMovieGenre)
     
     

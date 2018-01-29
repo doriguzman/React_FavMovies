@@ -24,10 +24,13 @@ movies
 
 
 const genreFilter = genre => 
-movies.filter(movie => movie.genre.includes(genre) )
+movies.filter(movie => movie.genre.includes(genre))
 
+
+const ratingFilter = rating =>
+  movies.filter(movie => movie.rating === rating)
 
 export default {
-  getAll,getOne, getMovieGenres, genreFilter
+  getAll,getOne, getMovieGenres, genreFilter, ratingFilter
 }
 
